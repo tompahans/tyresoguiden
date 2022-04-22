@@ -4,87 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tyresö turism</title>
+    <title>Tyresö Guide</title>
+    
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <!-- ändrade href till "./" så att det funkar även utan live-server. Punkten betyder från denna mapp, alltså från mappen där denna index.html är i. Man kan också skriva två punkter och det betyder att den skall backa en mapp, tex i style.css background image backar från css mappen ut till projektmappen och in till img mappen -->
-
-    <!-- importerade fonterna i css-filen istället -->
+    
+   
+     
   </head>
 
   <body>
-    <!-- Bytte ut header tagen till body istället, samma i css. -->
-
+    
     <header>
       <!-- La till en header tag för loggan tog bort navbar classen -->
       <h2 class="logga"><span>Tyr</span>esö</h2>
     </header>
-
-    <div class="main">
-      <div class="text">
-        <h1><span>Tyresö </span>Turistinformation</h1>
-        <p>Utforska Tyresö</p>
-        <div class="navbar">
-          <a href="./index.html" class="btn">Hem</a>
-          <!-- Behöver ej olika klasser per knapp, räcker med en -->
-          <a href="#badplatser" class="btn">Badplatser</a>
-          <!-- "./" även här för att få mer konsistens -->
-          <a href="#restauranger" class="btn">Restauranger</a>
-          <a href="./historia.html" class="btn">Tyresös Historia</a>
+    <div class="container">
+      <div class="main">
+        
+        <div class="header">
+          <h1>Tyresöguiden.se</h1>
+          <p>Den bästa guiden till Tyresös fina natur.</p>
+          
         </div>
-      </div>
+        <nav class="navbar navbar-expand-lg justify-content-center navbar-custom no-bg">
+          <div
+            class="container-fluid text-center justify-content-center align-items-center"
+          >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Hem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Badplatser">Badplatser</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Restauranger</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bilder</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kultur</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Färdiga paket
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">För skogsmullen</a></li>
+                    <li><a class="dropdown-item" href="#">För äventyraren</a></li>
+                    <li><a class="dropdown-item" href="#">För den äldre</a></li>
+                    <li><a class="dropdown-item" href="#">För barnfamiljen</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+       
 
-      <div class="content">
-        <!-- La till en div för att se hur det blir med mer info, lekte med grids för att testa samt la till lite h1or -->
+        <div class="content">
+          <!-- La till en div för att se hur det blir med mer info, lekte med grids för att testa samt la till lite h1or -->
 
-        <div style="padding: 10px">
+          
           <h1>Välkommen till Tyresö Turistinfo</h1>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            soluta incidunt aliquam ipsa? Natus fugiat praesentium,
-            necessitatibus nobis esse quis voluptas adipisci, ullam rem optio
-            quibusdam labore consequuntur modi, fugit delectus eveniet eum porro
-            voluptatibus rerum mollitia totam? Iure perferendis quis minus
-            voluptatibus animi ut voluptates repudiandae, explicabo nostrum
-            debitis odit, distinctio consectetur similique quas laudantium autem
-            exercitationem!
-            <img src="./img/Barnsjön.jpg" alt="Barnsjön" /> Iure suscipit
-            molestias eos minima et facilis ex sapiente hic, eligendi illum
-            voluptatum ipsum culpa odio dolorum aut in doloribus mollitia quo
-            pariatur recusandae non delectus dolores! Provident laudantium non
-            dicta, explicabo tempora fugit consequatur expedita officia? Iste
-            nesciunt laborum alias nisi.
-          </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis soluta incidunt aliquam ipsa? Natus fugiat
+              praesentium, necessitatibus nobis esse quis voluptas adipisci,
+              ullam rem optio quibusdam labore consequuntur modi, fugit delectus
+              eveniet eum porro voluptatibus rerum mollitia totam? Iure
+              perferendis quis minus voluptatibus animi ut voluptates
+              repudiandae, explicabo nostrum debitis odit, distinctio
+              consectetur similique quas laudantium autem exercitationem!
+              <img
+                src="../img/small/Barnsjön.jpg"
+                class="img-thumbnail m-2 rounded float-end"
+                alt="Barnsjön"
+                
+              />
+              Iure suscipit molestias eos minima et facilis ex sapiente hic,
+              eligendi illum voluptatum ipsum culpa odio dolorum aut in
+              doloribus mollitia quo pariatur recusandae non delectus dolores!
+              Provident laudantium non dicta, explicabo tempora fugit
+              consequatur expedita officia? Iste nesciunt laborum alias nisi.
+            </p>
+          </div>
         </div>
-
-        <div id="badplatser">
-          <h1>Badplatser</h1>
-          <h3>Här kommer det badplatser</h3>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-          iusto aliquam obcaecati, facilis cupiditate fugit. Doloribus nemo eius
-          repellendus cupiditate?
-          <img src="./img/Drevviken.jpg" alt="Drevviken" />
-        </div>
-
-        <div id="restauranger">
-          <h1>Restauranger</h1>
-          <h3>Här kommer det Restauranger</h3>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
-          accusamus, ipsam eligendi voluptas deserunt quas molestias neque
-          perferendis earum sapiente consequuntur vero placeat ratione
-          exercitationem laboriosam quis corporis ad numquam dolor, minus quos
-          praesentium!
-          <img src="./img/Rast.jpg" alt="Drevviken" style="float: left" />
-          Accusantium cum magnam aliquid facere, dolores reiciendis vero
-          mollitia sed necessitatibus error iste porro! Quas, sint, est iure
-          dignissimos laboriosam molestias, beatae impedit nam at distinctio
-          numquam quaerat autem quo quasi quibusdam ab ducimus nostrum hic
-          dolorum dolore nisi tempora expedita reiciendis! Nihil animi, dolore
-          optio debitis fugit sequi itaque magnam quas temporibus quibusdam
-          harum sunt. Commodi perferendis esse obcaecati. Libero eligendi vel
-          nulla maiores excepturi!
-        </div>
-      </div>
-    </div>
+      
+      
+    
+        <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
