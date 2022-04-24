@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"); /* Importerar fonter */
 
 :root {
-  --primary-color: #421333;
+  --primary-color: #ffbb00;
+  --background-alpha: rgba(255,255,255, 0.2);
   --dark-color: #333333;
   --light-color: #fc9434;
   --danger-color: #dc3545;
@@ -17,13 +18,9 @@ html {
   -webkit-scroll-behaviour: smooth;
 }
 
-.no-bg {
-  background: none;
-}
-
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.8)),
-    url("../img/large/bg1.jpg");
+    url("../img/large/bg4.jpg");
 	background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -35,10 +32,17 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
   padding: 2vh;
+
+}
+
+.logga img {
+  width: 200px;
+  height: auto;
+  object-position: center;
 }
 
 .info {
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--background-alpha);
   padding: 5px;
   border-radius: 5px;
 }
@@ -53,6 +57,79 @@ span {
   max-width: 100%;
   width: 900px;
 }
+
+.content {
+  width: 100%;
+  background: var(--background-alpha);
+  margin-top: 5vh;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  text-shadow: 2px 3px 4px black;
+  
+  
+}
+
+.content p {
+  font-size: 1.0rem;
+  text-align: left;
+  
+}
+
+.content div {
+  margin-bottom: 20px;
+  
+}
+
+header {
+  text-shadow: 2px 4px 5px black;
+  color: red;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-weight: bolder;
+  font-size: 60px;
+  letter-spacing: 2px;
+  
+}
+
+header p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+.btn {
+  margin: 0px 10px;
+  border: 2px solid white;
+  padding: 13px 35px;
+  letter-spacing: 1px;
+  color: black;
+  border-radius: 30px;
+  background-color: white;
+  text-decoration: none;
+}
+.btn:hover {
+  border: 2px solid white;
+  color: white;
+  background-color: #fa0202;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+
+
+
+/* BOOTSTRAP Justeringar*/
+.no-bg {
+  background: none;
+}
+
 
 .navbar .navbar-nav {
   display: flex;
@@ -69,7 +146,7 @@ span {
   background: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 25px;
-  margin-left: 10px;
+  margin: 2px;
   border: 2px solid white;
   transition: 1s;
   
@@ -110,109 +187,47 @@ span {
 
 
 .nav-item:hover {
-  background: red;
-}
-
-
-.content {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  margin-top: 5vh;
-  border-radius: 10px;
-  color: #fff;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: auto;
-  text-shadow: 2px 3px 4px black;
-  
-  
-}
-
-.content p {
-  font-size: 1.0rem;
-  text-align: left;
-  
-}
-
-
-.content div {
-  margin-bottom: 20px;
-  
-}
-
-
-.header h1 {
-  color: #f5f5ef;
-  font-weight: bolder;
-  font-size: 60px;
-  letter-spacing: 2px;
-  
-}
-
-.header p {
-  color: white;
-  text-transform: capitalize;
-  font-size: 18px;
-  margin-bottom: 30px;
-  word-spacing: 3px;
-  letter-spacing: 1px;
+  background: var(--primary-color);
 }
 
 
 
-.btn {
-  margin: 0px 10px;
-  border: 2px solid white;
-  padding: 13px 35px;
-  letter-spacing: 1px;
-  color: black;
-  border-radius: 30px;
-  background-color: white;
-  text-decoration: none;
-}
-.btn:hover {
-  border: 2px solid white;
-  color: white;
-  background-color: #fa0202;
-  transition: 1s ease;
-  cursor: pointer;
-}
-
+/* RESPONSIVITET */
 @media all and (max-width: 1100px) {
-  /* La till lite kod för responsivitet */
+  
   .content {
     grid-template-columns: auto;
   }
   
-  .header h1{
-    font-size: 1.5rem;
+  header h1{
+    font-size: 2rem;
   }
- .header p {
+  header p {
    font-size: 0.9rem;
    margin-bottom: 0;
  }
-
-  .navbar-nav li {
+ .navbar .navbar-nav {
+   margin-top: 10px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ } 
+ .nav-item {
     margin-top: 10px;
     border-radius: 5px;
     background: white;
     font-size: 76%;
-    width: 80%;
+    width: 90%;
     justify-content: center;
-    
-    
-    
+    padding: 2px;
+    margin-top: 1px;
+   }
+ 
+  .nav-item a{
+    background: none;
+    color: red;
   }
-
-  
-
 
   .content {
     margin-top: 10px;
-  }
-  .navbar-nav a{
-    
-    background: none;
-    color: red;
   }
 }
