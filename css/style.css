@@ -2,11 +2,11 @@
 
 :root {
   --primary-color: #ffbb00;
-  --background-alpha: rgba(255,255,255, 0.2);
+  --background-alpha: rgba(255, 255, 255, 0.205);
   --dark-color: #333333;
   --light-color: #fc9434;
   --danger-color: #dc3545;
-  --success-color: #28a745;
+  --success-color: #919191;
 }
 
 * {
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.705)),
     url("../img/large/bg4.jpg");
 	background-position: center;
   background-attachment: fixed;
@@ -61,15 +61,19 @@ span {
 .content {
   width: 100%;
   background: var(--background-alpha);
-  margin-top: 5vh;
+  margin-top: 1.5vh;
   border-radius: 10px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   padding: 20px;
   display: grid;
   grid-template-columns: auto;
-  text-shadow: 2px 3px 4px black;
+  text-shadow: 2px 2px black;
   
   
+}
+
+.content h1 {
+  font-size: 1.7rem;
 }
 
 .content p {
@@ -193,7 +197,7 @@ header p {
 
 
 /* RESPONSIVITET */
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1000px) {
   
   .content {
     grid-template-columns: auto;
