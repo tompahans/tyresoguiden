@@ -4,75 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tyresöguiden.se | Historia</title>
+    <title>Tyresöguiden.se | Hem</title>
+    
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <!-- ändrade href till "./" så att det funkar även utan live-server -->
+    
+
+     
   </head>
 
   <body>
-    <header>
-      <h2 class="logga"><span>Tyr</span>esö</h2>
-    </header>
+    
+   
+    <div class="container">
+      <div class="main">
+        
+        <header>
+          <img src="./img/logotyp1_border.png" alt="logo" />
+          <p>Guiden till tyresö</p>
+        </header>
+        
+        
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg justify-content-center navbar-custom no-bg">
+          <div
+            class="container-fluid text-center justify-content-center align-items-center"
+          >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              Meny
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Hem</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./badplatser.html">Badplatser</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./restauranger.html">Restauranger</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./historia.html">Historia</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Färdiga paket
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./paket.html#Skogsmulle">För skogsmullen</a></li>
+                    <li><a class="dropdown-item" href="./paket.html#Aventyrare">För äventyraren</a></li>
+                    <li><a class="dropdown-item" href="./paket.html#Äldre">För den äldre</a></li>
+                    <li><a class="dropdown-item" href="./paket.html#Barnfamilj">För barnfamiljen</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- NAV END -->
+        
+       
 
-    <div class="main">
-      <div class="text">
-        <h1><span>Tyresö </span>Turistinformation</h1>
-        <p>Utforska Tyresö</p>
-        <div class="navbar">
-          <a href="./index.html" class="btn">Hem</a>
-          <!-- Behöver ej olika klasser per knapp, räcker med en -->
-          <a href="./badplatser.html" class="btn">Badplatser</a>
-          <!-- "./" även här för att få mer konsistens -->
-          <a href="./resturang.html" class="btn">Restauranger</a>
-          <a href="./historia.html" class="btn">Tyresös Historia</a>
+        <div class="content ">
+         
+        <h1>Historia</h1>
+        <p>De första människorna anlände till det som nu är Tyresö kommun någon gång kring 3000-talet f.Kr. Permanenta boplatser uppstod inte förrän någon gång runt 600-talet. Det finns gravar och andra lämningar från denna förhistoriska tid.</p>
+        <p>Tyresö Godset har sitt ursprung i 1300-talet. Godset var som störst under 1600-talet, då nästan all nutida kommun area tillhörde det. Det var under detta århundrade som Tyresö slott och Tyresö kyrka byggdes.</p>
+       <p>Tyresö var ett viktigt industriellt centrum i Stockholmsområdet mellan 1500-talet och 1800-talet tack vare vattenkraftverken som kunde byggas på strömmarna mellan sjöarna. Vattenhjulen i kommunvapnet representerar de tre verken vid Nyfors, Uddby och Follbrinksströmmen. Industrierna inkluderade kvarnar, valsverk, pappersbruk, smedjor, sågar, textilindustri och tegelbruk. Inget av dessa gamla vattenkraftverk finns kvar. Uddby kvarn brann upp 1895 och i dess ställe byggdes ett vattenkraftverk för att producera el. Elkraftverket finns kvar än i dag och är det enda av sitt slag i Stockholmstrakten.</p>
+       <p>I början av 1900-talet började Tyresö Godsets stora landarealer att styckas upp och man började bygga sommarstugor. Några exklusiva fritidshus byggdes på Brevikshalvön. De första decennierna ökade byggtakten kraftigt. Från 1950-talet och framåt började fritidshusen byggas om till åretruntboende i rask takt.</p> 
+        <p>Från 1950-talet och framåt upplevde Bollmora en enorm tillväxt, särskilt efter lagstiftningen Lex Bollmora som tillät kommunala fastighetsbolag att verka i kommuner andra än den egna. Ett kommuncentrum bildades i Bollmora, Bollmora Centrum, vilket invigdes 1965. Miljonprogrammet satte sin särprägel på Tyresö, särskilt Bollmora, många av bostadsområdena är från det programmet.</p>
+        <p>I början av 1990-talet byggdes Bollmora Centrum om till en galleria och döptes om till Tyresö Centrum.
+        En stor skogsbrand förstörde cirka 15 % av Tyresta nationalpark i augusti 1999 (se Skogsbranden i Tyresta nationalpark 1999).</p>
+        
+          
+          </div>
         </div>
-      </div>
-
-      <div class="content">
-        <!-- La till en div för att se hur det blir, lekte med grids för att testa :) -->
-        <div>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde nemo
-            exercitationem itaque distinctio quia delectus adipisci eaque omnis
-            sapiente quo at repellat a provident, nostrum nihil vel expedita
-            blanditiis ratione rem, enim repudiandae facilis tenetur quos! Rerum
-            a minima minus nostrum perferendis magnam fugit. Nihil, labore sunt
-            quas a, maiores, consectetur minima hic nemo itaque aliquam sint ad
-            tempora doloribus provident esse id pariatur sit nesciunt nobis
-            cupiditate quae temporibus quos. Tempora vitae commodi ipsam, ullam
-            sed deserunt neque fuga iste sapiente ea eveniet fugiat? Dolorem et
-            reprehenderit voluptates enim voluptatibus asperiores sequi est
-            optio facilis officiis? Dolorum, quisquam aperiam.
-          </p>
-        </div>
-        <div>
-          <h1>Historia</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            soluta incidunt aliquam ipsa? Natus fugiat praesentium,
-            necessitatibus nobis esse quis voluptas adipisci, ullam rem optio
-            quibusdam labore consequuntur modi, fugit delectus eveniet eum porro
-            voluptatibus rerum mollitia totam? Iure perferendis quis minus
-            voluptatibus animi ut voluptates repudiandae, explicabo nostrum
-            debitis odit, distinctio consectetur similique quas laudantium autem
-            exercitationem! Iure suscipit molestias eos minima et facilis ex
-            sapiente hic, eligendi illum voluptatum ipsum culpa odio dolorum aut
-            in doloribus mollitia quo pariatur recusandae non delectus dolores!
-            Provident laudantium non dicta, explicabo tempora fugit consequatur
-            expedita officia? Iste nesciunt laborum alias nisi.
-          </p>
-        </div>
-        <div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni sint
-            repellendus magnam quidem inventore officia sed est in animi, beatae
-            rerum molestias? Fuga quis praesentium facere! Inventore mollitia
-            soluta nostrum nemo animi beatae impedit. Tempore, corrupti nostrum,
-            hic eaque, cupiditate molestias dolores magnam eos vero quae
-            repudiandae asperiores ut nulla.
-          </p>
-        </div>
-      </div>
-    </div>
+      
+      
+    
+        <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>

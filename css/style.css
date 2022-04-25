@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #ffbb00;
-  --background-alpha: rgba(255, 255, 255, 0.205);
+  --background-alpha: rgba(0, 0, 0, 0.205);
   --dark-color: #333333;
   --light-color: #fc9434;
   --danger-color: #dc3545;
@@ -18,9 +18,13 @@ html {
   -webkit-scroll-behaviour: smooth;
 }
 
+.link-primary-color {
+  color: var(--primary-color);
+}
+
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.705)),
-    url("../img/large/bg4.jpg");
+    url("../img/bakgrundsbilder/bg4.jpg");
 	background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -33,12 +37,14 @@ body {
   letter-spacing: 2px;
   padding: 2vh;
 
+  
+
 }
 
 .logga img {
-  width: 200px;
+  width: 150px;
   height: auto;
-  object-position: center;
+  object-fit: cover;
 }
 
 .info {
@@ -67,24 +73,56 @@ span {
   padding: 20px;
   display: grid;
   grid-template-columns: auto;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px 4px black;
   
   
 }
 
 .content h1 {
   font-size: 1.7rem;
+  padding-bottom: 20px;
+}
+.content h4 {
+  text-align: left;
+  padding: 10px;
 }
 
 .content p {
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   text-align: left;
+  
+}
+
+.restaurangLista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  
+ 
+}
+.restaurangLista div {
+  background:rgba(92, 92, 92, 0.342);
+  padding: 10px;
+  grid-auto-rows: 1fr;
+  max-height: 200px;
+  height: 100%;
+  
+}
+
+.restaurangLista > div:nth-child(2n) {
+  background:rgba(138, 138, 138, 0.39);
   
 }
 
 .content div {
   margin-bottom: 20px;
   
+}
+.content img {
+  max-width: 350px;
+  height: auto;
+  margin: 10px;
 }
 
 header {
@@ -95,7 +133,7 @@ header {
 header h1 {
   color: var(--primary-color);
   font-weight: bolder;
-  font-size: 60px;
+  font-size: 50px;
   letter-spacing: 2px;
   
 }
@@ -106,6 +144,10 @@ header p {
   margin-bottom: 30px;
   word-spacing: 3px;
   letter-spacing: 1px;
+}
+header img {
+  width: 400px;
+  height: auto;
 }
 
 .btn {
@@ -148,7 +190,7 @@ header p {
 
 .nav-item{
   background: rgb(255, 255, 255);
-  padding: 10px;
+  padding: 5px;
   border-radius: 25px;
   margin: 2px;
   border: 2px solid white;
