@@ -3,6 +3,7 @@
 :root {
   --primary-color: #ffbb00;
   --background-alpha: rgba(0, 0, 0, 0.205);
+  --secondary-color: #ba0000;
   --dark-color: #333333;
   --light-color: #fc9434;
   --danger-color: #dc3545;
@@ -228,21 +229,15 @@ header img {
 }
 
 .navbar-custom .navbar-nav > li > a {
-  color: rgb(0, 0, 0);
+  color: var(--secondary-color);
   text-shadow: -1px 1px 1px 5px black;
 }
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus {
-  color: #333;
-}
 
-.nav-link {
- 
-  color: black;
-}
+
+
 
 .nav-link a {
-  color: black;
+  color: var(--secondary-color);;
 }
 
 
@@ -254,6 +249,19 @@ header img {
 
 .nav-item:hover {
   background: var(--primary-color);
+}
+.w-45 {
+  width: 45%;
+}
+
+.row {
+  border-bottom: 2px solid var(--primary-color);
+  padding: 10px;
+}
+
+.figure-caption {
+  color: rgb(211, 211, 211);
+ 
 }
 
 
@@ -296,5 +304,9 @@ header img {
 
   .content {
     margin-top: 10px;
+  }
+
+  .w-45 {
+    width: 100%;
   }
 }
