@@ -24,12 +24,18 @@ html {
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.705)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
     url("../img/bakgrundsbilder/bg4.jpg");
 	background-position: center;
   background-attachment: fixed;
   background-size: cover;
   font-family: "Poppins", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 .logga {
   color: #fabd02;
@@ -87,10 +93,14 @@ span {
   text-align: left;
   padding: 10px;
 }
+.row p {
+  margin-bottom: 5px;
+}
 
 .content p {
   font-size: 0.9rem;
   text-align: left;
+  
   
 }
 
@@ -245,6 +255,7 @@ header img {
 .nav-item:hover {
   background: var(--primary-color);
 }
+
 
 
 
