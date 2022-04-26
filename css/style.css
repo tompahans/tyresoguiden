@@ -203,6 +203,10 @@ header img {
   
 }
 
+.active {
+  background-color: var(--primary-color);
+}
+
 .navbar-custom {
   font-weight: bold;
 }
