@@ -153,24 +153,6 @@ header img {
   height: auto;
 }
 
-.btn {
-  margin: 0px 10px;
-  border: 2px solid white;
-  padding: 13px 35px;
-  letter-spacing: 1px;
-  color: black;
-  border-radius: 30px;
-  background-color: white;
-  text-decoration: none;
-}
-.btn:hover {
-  border: 2px solid white;
-  color: white;
-  background-color: #fa0202;
-  transition: 1s ease;
-  cursor: pointer;
-}
-
 .img-desc {
   font-size: 0.8rem;
   text-align: left;
@@ -221,8 +203,8 @@ header img {
 .nav-link a {
   color: var(--secondary-color);;
 }
-.navbar-dark li{
-  color: black;
+.nav-item ul {
+  text-align: center;
 }
 
 
