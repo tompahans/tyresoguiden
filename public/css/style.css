@@ -44,9 +44,6 @@ body::-webkit-scrollbar {
   font-weight: 700;
   letter-spacing: 2px;
   padding: 2vh;
-
-  
-
 }
 
 .logga img {
@@ -82,8 +79,6 @@ span {
   display: grid;
   grid-template-columns: auto;
   text-shadow: 2px 2px 4px black;
-  
-  
 }
 
 .content h1 {
@@ -110,10 +105,6 @@ span {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
-  
-
-  
- 
 }
 .restaurangLista div {
   background:rgba(0, 0, 0, 0.5);
@@ -185,15 +176,10 @@ header img {
   text-align: left;
 }
 
-
-
-
 /* BOOTSTRAP Justeringar*/
 .no-bg {
   background: none;
 }
-
-
 .navbar .navbar-nav {
   display: flex;
   align-items: center;
@@ -232,16 +218,9 @@ header img {
   color: var(--secondary-color);
   text-shadow: -1px 1px 1px 5px black;
 }
-
-
-
-
 .nav-link a {
   color: var(--secondary-color);;
 }
-
-
-
 .navbar-dark li{
   color: black;
 }
@@ -278,20 +257,17 @@ header img {
    font-size: 0.9rem;
    margin-bottom: 0;
  }
- .navbar .navbar-nav {
-   margin-top: 10px;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
- } 
+
  .nav-item {
-    margin-top: 10px;
     border-radius: 5px;
-    background: white;
     font-size: 76%;
-    width: 90%;
+    width: 100%;
     justify-content: center;
-    padding: 2px;
-    margin-top: 1px;
+    padding: 0;
+    
+   }
+   .navbar ul {
+     margin-top: 10px;
    }
  
   .nav-item a{
@@ -301,9 +277,11 @@ header img {
 
   .content {
     margin-top: 10px;
+    width: 100%;
   }
 
   .w-45 {
     width: 100%;
   }
+  
 }
