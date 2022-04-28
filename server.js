@@ -46,16 +46,16 @@ app.get("/paket", function (req, res) {
 
 //Annas
 app.get("/Annas", function (req, res) {
-  res.locals.title = "Annaspepparkakor";
+  res.locals.title = "Historia: Annaspepparkakor";
   res.render("pages/Annas", {
-    page_name: "Historia",
+    page_name: "historia",
   });
 });
 //Tyresö slott
 app.get("/Slottet", function (req, res) {
-  res.locals.title = "Historia:Tyresöslott";
+  res.locals.title = "Historia: Tyresöslott";
   res.render("pages/Tyresoslott", {
-    page_name: "Historia",
+    page_name: "historia",
   });
 });
 
