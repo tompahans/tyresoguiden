@@ -44,5 +44,20 @@ app.get("/paket", function (req, res) {
   });
 });
 
+//Annas
+app.get("/Annas", function (req, res) {
+  res.locals.title = "Annaspepparkakor";
+  res.render("pages/Annas", {
+    page_name: "Historia",
+  });
+});
+//Tyresö slott
+app.get("/Slottet", function (req, res) {
+  res.locals.title = "Historia:Tyresöslott";
+  res.render("pages/Tyresoslott", {
+    page_name: "Historia",
+  });
+});
+
 app.listen(3000);
 console.log("Servern hostad på port 3000");
