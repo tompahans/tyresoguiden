@@ -37,24 +37,24 @@ app.get("/historia", function (req, res) {
 });
 
 //paket
-app.get("/paket", function (req, res) {
+app.get("/aktiviteter", function (req, res) {
   res.locals.title = "Paket";
-  res.render("pages/paket", {
-    page_name: "paket",
+  res.render("pages/aktiviteter", {
+    page_name: "aktiviteter",
   });
 });
 
 //Annas
-app.get("/Annas", function (req, res) {
+app.get("/annas", function (req, res) {
   res.locals.title = "Historia: Annaspepparkakor";
-  res.render("pages/Annas", {
+  res.render("pages/annas", {
     page_name: "historia",
   });
 });
 //Tyresö slott
 app.get("/Slottet", function (req, res) {
   res.locals.title = "Historia: Tyresöslott";
-  res.render("pages/Tyresoslott", {
+  res.render("pages/tyresoslott", {
     page_name: "historia",
   });
 });
