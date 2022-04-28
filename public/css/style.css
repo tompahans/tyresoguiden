@@ -104,19 +104,19 @@ span {
 
 .restaurangLista {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
 }
 .restaurangLista div {
   background:rgba(0, 0, 0, 0.5);
   padding: 10px;
-  height: 270px;
+  
  
 }
 
 .restaurangLista > div:nth-child(2n) {
-  background:rgba(204, 204, 204, 0.5);
+  background:none;
   
 }
 
