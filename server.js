@@ -52,10 +52,18 @@ app.get("/annas", function (req, res) {
   });
 });
 //Tyresö slott
-app.get("/Slottet", function (req, res) {
+app.get("/slottet", function (req, res) {
   res.locals.title = "Historia: Tyresöslott";
   res.render("pages/tyresoslott", {
     page_name: "historia",
+  });
+});
+
+//404-notfound
+app.get("/*", function (req, res) {
+  res.locals.title = "Sidan du söker finns ej";
+  res.render("pages/404", {
+    page_name: "404",
   });
 });
 
