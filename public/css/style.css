@@ -213,6 +213,16 @@ header img {
  
 }
 
+.navbar-toggler {
+  color: var(--secondary-color);
+  text-shadow: 2px 3px 5px black;
+  font-weight: bold;
+  font-style: italic;
+  
+
+}
+
+
 /* RESPONSIVITET */
 @media all and (max-width: 1000px) {
   
@@ -251,4 +261,11 @@ header img {
     width: 100%;
   }
   
+}
+
+@media all and (max-width: 431px) {
+header img {
+  max-width: 250px;
+}
+
 }
