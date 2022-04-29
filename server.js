@@ -45,14 +45,14 @@ app.get("/aktiviteter", function (req, res) {
 });
 
 //Annas
-app.get("/annas", function (req, res) {
+app.get("/historia/annas", function (req, res) {
   res.locals.title = "Historia: Annaspepparkakor";
   res.render("pages/annas", {
     page_name: "historia",
   });
 });
 //Tyresö slott
-app.get("/slottet", function (req, res) {
+app.get("/historia/slottet", function (req, res) {
   res.locals.title = "Historia: Tyresöslott";
   res.render("pages/tyresoslott", {
     page_name: "historia",
