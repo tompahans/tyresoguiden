@@ -12,21 +12,21 @@
         "meny": "A la carte, lunch och catering",
         "plats": "Myggdalsplan 1",
         "takeaway": true,
-        "href": "https://www.brodernas.nu/restauranger/stockholm/tyreso/"
+        "href": "https://toscanini.se/"
     },
     {
         "namn": "Bonn Sushi",
         "meny": "Sushi, Sashimi och olika varmrätter",
         "plats": "Bollmoravägen 24C",
         "takeaway": true,
-        "href": "https://www.bonnsushi.se/"
+        "href": "http://www.bonnsushi.se/"
     },   
     {
         "namn": "Spis&Vin",
         "meny": "A la carte, lunch, catering samt café",
         "plats": "Stadsparken 6",
         "takeaway": false,
-        "href": "https://www.spisovin.se/"
+        "href": "http://www.spisovin.se/"
     },
     {
         "namn": "Lilla Italien",
@@ -40,7 +40,7 @@
         "meny": "Pizza, matiga sallader, pastarätter och grillrätter.",
         "plats": "Vendelsövägen 53",
         "takeaway": false,
-        "href": "https://www.spisovin.se/"
+        "href": "https://www.lillarott.se/"
     },
     {
         "namn": "La Forchetta",
