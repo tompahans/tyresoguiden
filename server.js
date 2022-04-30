@@ -20,6 +20,22 @@ app.get("/badplatser", function (req, res) {
   });
 });
 
+//aktiviteter
+app.get("/aktiviteter", function (req, res) {
+  res.locals.title = "Aktiviteter";
+  res.render("pages/aktiviteter", {
+    page_name: "aktiviteter",
+  });
+});
+
+//aktivitet alby
+app.get("/aktiviteter/alby", function (req, res) {
+  res.locals.title = "Aktiviteter";
+  res.render("pages/aktivitet_alby", {
+    page_name: "aktiviteter",
+  });
+});
+
 //restauranger
 app.get("/restauranger", function (req, res) {
   const restauranger = require("./restauranger.json");
@@ -35,14 +51,6 @@ app.get("/historia", function (req, res) {
   res.locals.title = "Historia";
   res.render("pages/historia", {
     page_name: "historia",
-  });
-});
-
-//paket
-app.get("/aktiviteter", function (req, res) {
-  res.locals.title = "Paket";
-  res.render("pages/aktiviteter", {
-    page_name: "aktiviteter",
   });
 });
 
