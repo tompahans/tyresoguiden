@@ -1,0 +1,68 @@
+{
+    "restauranger":
+    [{
+        "namn": "Brödernas",
+        "meny": "Hamburgare pizza och olika sallader",
+        "plats": "Öringevägen 2",
+        "takeaway": true,
+        "href": "https://www.brodernas.nu/restauranger/stockholm/tyreso/"
+    },
+    {
+        "namn": "Toscanini",
+        "meny": "A la carte, lunch och catering",
+        "plats": "Myggdalsplan 1",
+        "takeaway": true,
+        "href": "https://www.brodernas.nu/restauranger/stockholm/tyreso/"
+    },
+    {
+        "namn": "Bonn Sushi",
+        "meny": "Sushi, Sashimi och olika varmrätter",
+        "plats": "Bollmoravägen 24C",
+        "takeaway": true,
+        "href": "https://www.bonnsushi.se/"
+    },   
+    {
+        "namn": "Spis&Vin",
+        "meny": "A la carte, lunch, catering samt café",
+        "plats": "Stadsparken 6",
+        "takeaway": false,
+        "href": "https://www.spisovin.se/"
+    },
+    {
+        "namn": "Lilla Italien",
+        "meny": "Pizza, sallad, pastarätter, hamburgare, kebab, gyros och a la carte",
+        "plats": "Radiovägen 5",
+        "takeaway": true,
+        "href": "https://www.lillaitalien.com"
+    },
+    {
+        "namn": "Lilla Rött",
+        "meny": "Pizza, matiga sallader, pastarätter och grillrätter.",
+        "plats": "Vendelsövägen 53",
+        "takeaway": false,
+        "href": "https://www.spisovin.se/"
+    },
+    {
+        "namn": "La Forchetta",
+        "meny": "Pizza, Pasta, Risotto, sallader, kött- och fiskrätter samt efterrätter.",
+        "plats": "Pluggvägen 23A",
+        "takeaway": true,
+        "href": "https://laforchetta.se/"
+    },
+    {
+        "namn": "Babas",
+        "meny": "Hamburgare och sallader",
+        "plats": "Tyresö Centrum",
+        "takeaway": true,
+        "href": "https://babas.se/"
+    },
+    {
+        "namn": "Alt Food & Drinks",
+        "meny": "Burgare, kötträtter, veganskt och sallader",
+        "plats": "Tyresö Centrum",
+        "takeaway": true,
+        "href": "https://alt-food-drinks.se/"
+    }
+
+
+]}

@@ -116,6 +116,7 @@ span {
   margin: 20px 0;
 }
 
+
 header {
   text-shadow: 2px 4px 5px black;
   color: red;
@@ -260,14 +261,20 @@ header img {
   }
   
   .nav-item ul {
-    text-align: center ;
+    text-align: center;
   }
+
+  
 
 }
 
-@media all and (max-width: 431px) {
+@media all and (max-width: 500px) {
 header img {
   max-width: 250px;
 }
+.content img {
+  max-width: 300px;
+}
+
 
 }

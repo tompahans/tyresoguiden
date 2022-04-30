@@ -22,9 +22,11 @@ app.get("/badplatser", function (req, res) {
 
 //restauranger
 app.get("/restauranger", function (req, res) {
+  const restauranger = require("./restauranger.json");
   res.locals.title = "Restauranger";
   res.render("pages/restauranger", {
     page_name: "restauranger",
+    restaurants: restauranger,
   });
 });
 
