@@ -6,7 +6,7 @@
   --secondary-color: #ba0000;
   --dark-color: #333333;
   --light-color: #fc9434;
-  --danger-color: #dc3545;
+  --danger-color: #ff0000;
   --success-color: #919191;
 }
 
@@ -112,8 +112,8 @@ span {
   
 }
 .content img {
-  
-  margin: 30px 0;
+  max-width: 400px;
+  margin: 20px 0;
 }
 
 header {
@@ -192,9 +192,7 @@ header img {
 .nav-link a {
   color: var(--secondary-color);;
 }
-.nav-item ul {
-  text-align: center;
-}
+
 
 .nav-item:hover {
   background: var(--primary-color);
@@ -261,6 +259,10 @@ header img {
     width: 100%;
   }
   
+  .nav-item ul {
+    text-align: center ;
+  }
+
 }
 
 @media all and (max-width: 431px) {

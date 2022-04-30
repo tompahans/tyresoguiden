@@ -51,6 +51,15 @@ app.get("/historia/annas", function (req, res) {
     page_name: "historia",
   });
 });
+
+//Fontana
+app.get("/historia/fontana", function (req, res) {
+  res.locals.title = "Historia: Fontana";
+  res.render("pages/fontana", {
+    page_name: "historia",
+  });
+});
+
 //Tyresö slott
 app.get("/historia/slottet", function (req, res) {
   res.locals.title = "Historia: Tyresöslott";
