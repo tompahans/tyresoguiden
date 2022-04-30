@@ -26,7 +26,7 @@ app.get("/restauranger", function (req, res) {
   res.locals.title = "Restauranger";
   res.render("pages/restauranger", {
     page_name: "restauranger",
-    restaurants: restauranger,
+    data: restauranger,
   });
 });
 

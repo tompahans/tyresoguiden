@@ -10,7 +10,7 @@
         <!-- NAV -->
         <%- include('../partials/navbar'); %>
         <!-- NAV END -->
-        <%- console.log(restaurants) %>
+        
 
 
         <div class="content">
@@ -20,13 +20,13 @@
             
             
             <div class="restaurangLista">
-              <% for(var i=0; i < restaurants.restauranger.length; i++) {%>
+              <% for(var i=0; i < data.restauranger.length; i++) {%>
               <div>
-                <h4><a href='<%- restaurants.restauranger[i].href %>' class='link-primary-color'><%- restaurants.restauranger[i].namn %></h4></a>
+                <h4><a href='<%- data.restauranger[i].href %>' class='link-primary-color'><%- data.restauranger[i].namn %></h4></a>
                 <p>
-                  Plats: <%- restaurants.restauranger[i].plats %><br />
-                  Meny:  <%- restaurants.restauranger[i].meny %><br />
-                  Takeaway:  <%- restaurants.restauranger[i].takeaway ? "Möjligt" : "Ej möjligt" %>
+                  Plats: <%- data.restauranger[i].plats %><br />
+                  Meny:  <%- data.restauranger[i].meny %><br />
+                  Takeaway:  <%- data.restauranger[i].takeaway ? "Möjligt" : "Ej möjligt" %>
                 </p>
               </div>
               <% } %>
