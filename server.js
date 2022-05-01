@@ -70,7 +70,6 @@ app.get("/historia/fontana", function (req, res) {
     page_name: "historia",
   });
 });
-
 //Tyresö slott
 app.get("/historia/slottet", function (req, res) {
   res.locals.title = "Historia: Tyresöslott";
@@ -78,7 +77,6 @@ app.get("/historia/slottet", function (req, res) {
     page_name: "historia",
   });
 });
-
 //404-notfound
 app.get("/*", function (req, res) {
   res.locals.title = "Sidan du söker finns ej";
