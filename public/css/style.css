@@ -120,7 +120,7 @@ span {
 }
 .content img {
   max-width: 380px;
-  margin: 25px 0;
+  margin: 20px 0;
 }
 header img {
   width: 400px;
@@ -142,7 +142,6 @@ header img {
 color: rgb(0, 0, 0);
 font-size: 1em;
 background: var(--primary-color);
-backdrop-filter: blur(10px);
 border-radius: 4px;
 text-shadow: none;
 }
@@ -283,6 +282,9 @@ text-shadow: none;
 .content img {
   max-width: 300px;
 }
-
+.jump-menu { 
+  display: none;
+  font-size: 0.9em;
+}
 
 }
