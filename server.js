@@ -1,6 +1,7 @@
 const express = require("express");
+require("dotenv").config();
 const app = express();
-const PORT = procces.env.PORT || 80;
+const PORT = process.env.PORT || 80;
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
