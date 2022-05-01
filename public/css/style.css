@@ -141,7 +141,7 @@ header img {
 .jump-menu {
 color: rgb(0, 0, 0);
 font-size: 1em;
-background: rgb(199, 152, 0);
+background: var(--primary-color);
 backdrop-filter: blur(10px);
 border-radius: 4px;
 text-shadow: none;
