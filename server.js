@@ -87,8 +87,4 @@ app.get("/*", function (req, res) {
   });
 });
 
-var server = app.listen(PORT, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log("server is listening at http://%s:%s", host, port);
-});
+app.listen(process.env.PORT || 3000, () => console.log("Server is running.."));
