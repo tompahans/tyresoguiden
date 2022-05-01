@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 80;
+const PORT = procces.env.PORT || 80;
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -87,5 +87,8 @@ app.get("/*", function (req, res) {
   });
 });
 
-app.listen(PORT);
-console.log(PORT);
+var server = app.listen(PORT, function () {
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log("server is listening at http://%s:%s", host, port);
+});
