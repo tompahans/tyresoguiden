@@ -227,9 +227,7 @@ text-shadow: none;
 
 /* RESPONSIVITET */
 @media all and (max-width: 1000px) {
-
-
-  .content {
+.content {
     grid-template-columns: auto;
   }
  .nav-item {

@@ -32,14 +32,14 @@
           <a
             class="nav-link dropdown-toggle"
             href="#"
-            id="navbarDropdownMenuLink"
+            id="historiaDropdown"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Historia
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <ul class="dropdown-menu" aria-labelledby="historiaDropdown">
             <li>
               <a class="dropdown-item" href="../Historia">Tyresö</a>
             </li>
@@ -61,18 +61,20 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item dropdown <%= page_name === 'paket' && 'active' %>">
+        <li
+          class="nav-item dropdown <%= page_name === 'aktiviteter' && 'active' %>"
+        >
           <a
             class="nav-link dropdown-toggle"
             href="#"
-            id="navbarDropdownMenuLink"
+            id="aktiviteterDropdown"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Aktiviteter
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <ul class="dropdown-menu" aria-labelledby="aktiviteterDropdown">
             <li>
               <a class="dropdown-item" href="../Aktiviteter/Alby"
                 >Alby Fridluftsgård</a
