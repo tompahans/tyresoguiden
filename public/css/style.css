@@ -30,6 +30,7 @@ body {
 	background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Poppins", sans-serif;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -67,6 +68,8 @@ span {
   display: grid;
   grid-template-columns: auto;
   text-shadow: 2px 2px 4px black;
+  justify-content: center;
+  align-items: center;
  
 }
 
@@ -120,9 +123,15 @@ header img {
   height: auto;
 }
 
-.img-desc {
+.img-container {
   font-size: 0.8rem;
-  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  margin-top: -10px;
+}
+.img-container p {
+  margin-top: -10px;
+  color: rgb(161, 161, 161);
 }
 
 .jump-menu {
@@ -218,7 +227,8 @@ text-shadow: none;
 
 /* RESPONSIVITET */
 @media all and (max-width: 1000px) {
-  
+
+
   .content {
     grid-template-columns: auto;
   }
@@ -260,8 +270,8 @@ text-shadow: none;
 
 }
 
-@media all and (max-width: 500px) {
-header img {
+@media all and (max-width: 600px) {
+  header img {
   max-width: 250px;
 }
 .content img {
