@@ -86,5 +86,5 @@ app.get("/*", function (req, res) {
   });
 });
 
-app.listen(3000);
-console.log("Servern hostad på port 3000");
+app.listen(80);
+console.log("Servern hostad på port 80");
