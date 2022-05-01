@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const PORT = 80;
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -86,5 +87,5 @@ app.get("/*", function (req, res) {
   });
 });
 
-app.listen(80);
-console.log("Servern hostad på port 80");
+app.listen(PORT);
+console.log(PORT);
