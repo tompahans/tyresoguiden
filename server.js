@@ -57,7 +57,7 @@ app.get("/historia", function (req, res) {
 
 //Annas
 app.get("/historia/annas", function (req, res) {
-  res.locals.title = "Historia: Annaspepparkakor";
+  res.locals.title = "Historia: Annas pepparkakor";
   res.render("pages/annas", {
     page_name: "historia",
   });
@@ -72,8 +72,8 @@ app.get("/historia/fontana", function (req, res) {
 });
 //Tyresö slott
 app.get("/historia/slottet", function (req, res) {
-  res.locals.title = "Historia: Tyresöslott";
-  res.render("pages/tyresoslott", {
+  res.locals.title = "Historia: Tyresö slott";
+  res.render("pages/slottet", {
     page_name: "historia",
   });
 });
