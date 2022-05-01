@@ -139,9 +139,10 @@ header img {
 }
 
 .jump-menu {
-color: white;
+color: rgb(0, 0, 0);
 font-size: 1em;
-background: rgba(0, 0, 0, 0.349);
+background: rgb(199, 152, 0);
+backdrop-filter: blur(10px);
 border-radius: 4px;
 text-shadow: none;
 }
