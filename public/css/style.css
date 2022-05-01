@@ -72,6 +72,10 @@ span {
   align-items: center;
  
 }
+.content div {
+  justify-content: center;
+  align-items: center;
+}
 
 .content h1 {
   font-size: 1.7rem;
@@ -217,11 +221,14 @@ text-shadow: none;
 
 .navbar-toggler {
   color: var(--secondary-color);
-  text-shadow: 2px 3px 5px black;
+  text-shadow: 2px 2px 3px rgb(59, 59, 59);
   font-weight: bold;
-  font-style: italic;
   
+}
+.navbar-toggler img {
 
+  width: 30px;
+  height: auto;
 }
 
 
