@@ -220,6 +220,10 @@ z-index: 1;
   padding: 10px;
 }
 
+:target h4 {
+  color: var(--primary-color);
+}
+
 .figure-caption {
   color: rgb(211, 211, 211);
  
