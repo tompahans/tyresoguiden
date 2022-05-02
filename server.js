@@ -37,6 +37,14 @@ app.get("/aktiviteter/alby", function (req, res) {
   });
 });
 
+//aktivitet slottet
+app.get("/aktiviteter/slottet", function (req, res) {
+  res.locals.title = "Aktiviteter";
+  res.render("pages/aktivitet_slottet", {
+    page_name: "aktiviteter",
+  });
+});
+
 //restauranger
 app.get("/restauranger", function (req, res) {
   const restauranger = require("./restauranger.json");
