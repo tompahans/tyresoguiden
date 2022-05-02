@@ -135,7 +135,7 @@ header img {
   font-size: 0.8rem;
   width: 100%;
   width: inherit;
-  border: 2px solid red;
+  
   
 }
 .img-container p {
@@ -219,6 +219,7 @@ z-index: 1;
 .row {
   border-bottom: 2px solid var(--primary-color);
   padding: 10px;
+  
 }
 
 :target h4 {
