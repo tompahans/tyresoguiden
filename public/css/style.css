@@ -39,7 +39,15 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
+#carouselSlottet {
+  max-width: 380px;
+  margin: 2px;
+  
+}
+#carouselSlottet img {
+  max-width: 380px;
+  
+}
 
 .info {
   background: var(--background-alpha);
@@ -69,6 +77,7 @@ span {
   text-shadow: 2px 2px 4px black;
   justify-content: center;
   align-items: center;
+  font-size: 0.9rem;
  
 }
 .content div {
@@ -120,6 +129,7 @@ span {
 }
 .content img {
   max-width: 380px;
+  
   
 }
 header {
@@ -173,6 +183,9 @@ z-index: 1;
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+.img-thumbnail {
+  padding: 0;
 }
 
 .nav-item {
