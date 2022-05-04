@@ -40,14 +40,18 @@ body::-webkit-scrollbar {
   display: none;
 }
 #carouselSlottet {
-  max-width: 380px;
+  max-width: 512px;
   margin: 2px;
+  object-fit: cover;
+  border: 1px solid white;
+ 
+  
+  
   
 }
 #carouselSlottet img {
-  max-width: 380px;
-  
-}
+  max-width: 512px;
+ }
 
 .info {
   background: var(--background-alpha);
