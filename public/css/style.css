@@ -39,18 +39,20 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+
 #carouselSlottet {
-  max-width: 512px;
+  border-radius: 5px;
   margin: 2px;
   object-fit: cover;
   border: 1px solid white;
- 
-  
-  
-  
 }
+
 #carouselSlottet img {
-  max-width: 512px;
+  max-width: 100%;
+  width: 100%;
+  
+  
  }
 
 .info {
@@ -153,18 +155,17 @@ header img {
   
 }
 .img-container p {
- 
-  color: rgb(161, 161, 161);
+ color: rgb(161, 161, 161);
 }
 
 .jump-menu {
-color: white;
-font-size: 1em;
-background: rgba(0,0,0,0.5);
-border-radius: 4px;
-text-shadow: none;
-text-align: center;
-z-index: 1;
+  color: white;
+  font-size: 1em;
+  background: rgba(0,0,0,0.5);
+  border-radius: 4px;
+  text-shadow: none;
+  text-align: center;
+  z-index: 1;
 }
 .jump-menu a {
   color: var(--primary-color);
@@ -177,6 +178,9 @@ z-index: 1;
 /* BOOTSTRAP Justeringar*/
 .no-bg {
   background: none;
+}
+.carousel {
+  overflow: hidden;
 }
 .navbar .navbar-nav {
   display: flex;
