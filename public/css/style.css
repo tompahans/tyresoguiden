@@ -10,6 +10,11 @@
   --success-color: #919191;
 }
 
+a:hover {
+  color: var(--secondary-color);
+  transition: ease 0.5s;
+}
+
 * {
   box-sizing: border-box;
 }
