@@ -18,6 +18,7 @@ app.get("/", function (req, res) {
   res.locals.title = "Hem";
   res.render("pages/index", {
     page_name: "hem",
+    subpage_name: null,
   });
 });
 
@@ -26,6 +27,7 @@ app.get("/badplatser", function (req, res) {
   res.locals.title = "Badplatser";
   res.render("pages/badplatser", {
     page_name: "badplatser",
+    subpage_name: null,
   });
 });
 
@@ -34,6 +36,16 @@ app.get("/aktiviteter", function (req, res) {
   res.locals.title = "Aktiviteter";
   res.render("pages/aktiviteter", {
     page_name: "aktiviteter",
+    subpage_name: null,
+  });
+});
+
+//aktiviteter barnfamilj
+app.get("/aktiviteter/barnfamilj", function (req, res) {
+  res.locals.title = "Aktiviteter för barnfamiljen";
+  res.render("pages/aktivitet_barnfamilj", {
+    page_name: "aktiviteter",
+    subpage_name: "barnfamilj",
   });
 });
 
@@ -42,6 +54,7 @@ app.get("/aktiviteter/alby", function (req, res) {
   res.locals.title = "Aktiviteter";
   res.render("pages/aktivitet_alby", {
     page_name: "aktiviteter",
+    subpage_name: "alby",
   });
 });
 
@@ -50,6 +63,7 @@ app.get("/aktiviteter/slottet", function (req, res) {
   res.locals.title = "Aktiviteter";
   res.render("pages/aktivitet_slottet", {
     page_name: "aktiviteter",
+    subpage_name: "bslott",
   });
 });
 
@@ -60,6 +74,7 @@ app.get("/restauranger", function (req, res) {
   res.render("pages/restauranger", {
     page_name: "restauranger",
     data: restauranger,
+    subpage_name: null,
   });
 });
 
@@ -68,6 +83,7 @@ app.get("/historia", function (req, res) {
   res.locals.title = "Historia";
   res.render("pages/historia", {
     page_name: "historia",
+    subpage_name: null,
   });
 });
 
@@ -76,6 +92,7 @@ app.get("/historia/annas", function (req, res) {
   res.locals.title = "Historia: Annas pepparkakor";
   res.render("pages/annas", {
     page_name: "historia",
+    subpage_name: "annas",
   });
 });
 
@@ -84,6 +101,7 @@ app.get("/historia/fontana", function (req, res) {
   res.locals.title = "Historia: Fontana";
   res.render("pages/fontana", {
     page_name: "historia",
+    subpage_name: "fontana",
   });
 });
 //Tyresö slott
@@ -91,6 +109,7 @@ app.get("/historia/slottet", function (req, res) {
   res.locals.title = "Historia: Tyresö slott";
   res.render("pages/slottet", {
     page_name: "historia",
+    subpage_name: "slottet",
   });
 });
 //404-notfound

@@ -16,15 +16,15 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item <%= page_name === 'hem' && 'active' %>">
-          <a class="nav-link" aria-current="page" href="/">Hem</a>
+          <a class="nav-link" <%= page_name === 'hem' && ' aria-current=page' %> href="/">Hem</a>
         </li>
         <li
           class="nav-item dropdown <%= page_name === 'badplatser' && 'active' %>"
         >
-          <a class="nav-link" href="../Badplatser">Badplatser</a>
+          <a class="nav-link" href="../Badplatser" <%= page_name === 'badplatser' && ' aria-current=page' %>>Badplatser</a>
         </li>
         <li class="nav-item <%= page_name === 'restauranger' && 'active' %>">
-          <a class="nav-link" href="../Restauranger">Restauranger</a>
+          <a class="nav-link" href="../Restauranger" <%= page_name === 'restauranger' && ' aria-current=page' %>>Restauranger</a>
         </li>
         <li
           class="nav-item dropdown <%= page_name === 'historia' && 'active' %>"
@@ -41,22 +41,22 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="historiaDropdown">
             <li>
-              <a class="dropdown-item" href="../Historia">Tyresö</a>
+              <a class="dropdown-item" href="../Historia" <%= page_name === 'historia' && ' aria-current=page' %>>Tyresö</a>
             </li>
             <li>
               <a class="dropdown-item" href="../Historia/Slottet"
-                >Tyresö Slott</a
+              <%= subpage_name === 'slottet' && ' aria-current=page' %>>Tyresö Slott</a
               >
             </li>
 
             <li>
               <a class="dropdown-item" href="../Historia/Annas"
-                >Annas Pepparkakor</a
+              <%= subpage_name === 'annas' && ' aria-current=page' %>>Annas Pepparkakor</a
               >
             </li>
             <li>
               <a class="dropdown-item" href="../Historia/Fontana"
-                >Fontana Food</a
+              <%= subpage_name === 'fontana' && ' aria-current=page' %>>Fontana Food</a
               >
             </li>
           </ul>
@@ -77,18 +77,18 @@
           <ul class="dropdown-menu" aria-labelledby="aktiviteterDropdown">
             <li>
               <a class="dropdown-item" href="../Aktiviteter/Alby"
-                >Alby Fridluftsgård</a
+              <%= subpage_name === 'alby' && ' aria-current=page' %>>Alby Fridluftsgård</a
               >
             </li>
             <li>
               <a class="dropdown-item" href="../Aktiviteter/Slottet"
-                >Besök Tyresö Slott</a
+              <%= subpage_name === 'bslott' && ' aria-current=page' %>>Besök Tyresö Slott</a
               >
             </li>
 
             <li>
-              <a class="dropdown-item" href="../Aktiviteter/"
-                >För barnfamiljen</a
+              <a class="dropdown-item" href="../Aktiviteter/Barnfamilj"
+              <%= subpage_name === 'barnfamilj' && ' aria-current=page' %>>För barnfamiljen</a
               >
             </li>
           </ul>
