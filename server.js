@@ -5,14 +5,6 @@ const app = express();
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-if (process.env.NODE_ENV === "production") {
-  app.use((req, res, next) => {
-    if (req.header("x-forwarded-proto") !== "https")
-      res.redirect(`https://${req.header("host")}${req.url}`);
-    else next();
-  });
-}
-
 //index
 app.get("/", function (req, res) {
   res.locals.title = "Hem";
@@ -112,11 +104,22 @@ app.get("/historia/slottet", function (req, res) {
     subpage_name: "slottet",
   });
 });
+
+//Mall för att testa nya sidor
+app.get("/dev/mall", function (req, res) {
+  res.locals.title = "Mall";
+  res.render("pages/mall", {
+    page_name: "mall",
+    subpage_name: null,
+  });
+});
+
 //404-notfound
 app.get("/*", function (req, res) {
   res.locals.title = "Sidan du söker finns ej";
   res.render("pages/404", {
     page_name: "404",
+    subpage_name: null,
   });
 });
 
